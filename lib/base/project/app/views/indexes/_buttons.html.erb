@@ -1,0 +1,11 @@
+<h2>
+  <div class="col-xs-12">
+    <%= round_icon_link button: 'btn-default', class: 'pull-left', icon: 'fa-arrow-left', path: back_link, title:t('simple_form.back') %>
+
+    <% if defined?(new_link) %>
+    <%= round_icon_link button: 'btn-default', class: 'pull-right m-l-5', icon: 'fa-plus', path: new_link, title: new_title %>
+    <% end %>
+
+    <%= round_icon_button type: :button, button: 'btn-info', icon: 'fa-filter', class: 'display-filters pull-right', title: t('filters.open_button') %>
+  </div>
+</h2>

@@ -1,0 +1,9 @@
+pt-BR:
+  error_pages:
+    code: Status %{code}
+    401: Você não possui permissão para essa ação
+    404: Infelizmente, não foi possível encontrar o recurso
+    422: Não foi possível realizar a ação desejada
+    500: Aconteceu um erro inesperado!
+    503: O sistema está indisponível no momento
+    additional: Por favor, contate o Administrador do Sistema

@@ -1,0 +1,16 @@
+<nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+      <span class="sr-only"><%= t('toggle_menu') %></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+
+    <%= image_tag 'android-icon-48x48', class: 'pull-left' %>
+    <%= brand_link %>
+  </div>
+
+  <%= render 'shared/menu/header_menu' %>
+  <%= render 'shared/menu/sidebar' %>
+</nav>

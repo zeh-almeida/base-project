@@ -1,0 +1,12 @@
+<% if form.object.persisted? %>
+<%= form.input :created_at, as: :string, wrapper_html: { class: 'col-xs-4' }, input_html: {disabled: true, value: localize(form.object.created_at, format: :small)} %>
+<%= form.input :updated_at, as: :string, wrapper_html: { class: 'col-xs-4' }, input_html: {disabled: true, value: localize(form.object.updated_at, format: :small)} %>
+
+<div class="form-group string optional client_whodunnit col-xs-4">
+  <label class="control-label string optional" for="client_whodunnit">
+    <%= t('activerecord.attributes.version.whodunnit') %>
+  </label>
+
+  <input class="form-control string optional" value="<%= form.object.versions.last.whodunnit%>" name="client[whodunnit]" id="client_whodunnit" type="text" disabled>
+</div>
+<% end %>

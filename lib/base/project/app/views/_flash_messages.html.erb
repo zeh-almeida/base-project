@@ -1,0 +1,12 @@
+<div class="col-xs-12 m-0 p-0" id="alert-location">
+  <% flash.each do |type, message| %>
+  <% if message.kind_of?(Array) %>
+  <% message.each do |text| %>
+  <%= show_flash( type, text ) %>
+  <% end %>
+
+<% else %>
+  <%= show_flash( type, message ) %>
+  <% end %>
+  <% end %>
+</div>

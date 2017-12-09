@@ -1,0 +1,25 @@
+<ul class="nav navbar-top-links navbar-right">
+
+  <% if current_user %>
+  <li class="dropdown">
+    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+      <i class="fa fa-user fa-fw"></i>
+      <i class="fa fa-caret-down"></i>
+    </a>
+
+    <ul class="dropdown-menu dropdown-user">
+      <li>
+        <%= edit_profile_button %>
+      </li>
+
+      <% if current_user.updated_password %>
+      <li class="divider"></li>
+      <li>
+        <%= logout_button %>
+      </li>
+      <% end %>
+    </ul>
+  </li>
+  <% end %>
+
+</ul>

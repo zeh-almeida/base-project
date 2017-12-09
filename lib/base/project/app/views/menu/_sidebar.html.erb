@@ -1,0 +1,44 @@
+<div class="navbar-default sidebar" role="navigation">
+  <div class="sidebar-nav navbar-collapse">
+
+    <% if current_user && current_user.updated_password %>
+    <ul class="nav in" id="side-menu">
+      <li class="sidebar-search">
+        <div class="input-group custom-search-form">
+          <input class="form-control" placeholder="<%= t('search_menu') %>" type="text">
+
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="button">
+              <i class="fa fa-search"></i>
+            </button>
+          </span>
+        </div>
+      </li>
+
+      <% with_permission('dashboard|index') do %>
+      <li>
+        <%= icon_link(authenticated_user_path, 'fa fa-dashboard fa-fw', t('activerecord.models.dashboards.other')) %>
+      </li>
+      <% end %>
+
+      <% with_permission('user_type|index') do %>
+      <li>
+        <%= icon_link(user_types_path, 'fa fa-users fa-fw', t('activerecord.models.user_types.other')) %>
+      </li>
+      <% end %>
+
+      <% with_permission('employer|index') do %>
+      <li>
+        <%= icon_link(employers_path, 'fa fa-building-o fa-fw', t('activerecord.models.employers.other')) %>
+      </li>
+      <% end %>
+
+      <% with_permission('user|index') do %>
+      <li>
+        <%= icon_link(users_path, 'fa fa-users fa-fw', t('activerecord.models.users.other')) %>
+      </li>
+      <% end %>
+    </ul>
+    <% end %>
+  </div>
+</div>

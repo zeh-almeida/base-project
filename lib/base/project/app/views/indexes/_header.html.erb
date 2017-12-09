@@ -1,0 +1,10 @@
+<h1 class="page-header">
+  <%= name %>
+
+  <% if defined?(parent) && parent %>
+  |
+  <span class="additional-page-header">
+    <%= link_to parent.name, url_for(parent), class: 'no-link' %>
+  </span>
+  <% end %>
+</h1>
