@@ -1,4 +1,4 @@
-module ConsoleSay
+module Base::Project::Lib::ConsoleSay
   extend self
 
   def say(message, subitem = false)
@@ -10,7 +10,7 @@ module ConsoleSay
 
     time = Benchmark.measure { result = yield }
 
-    time_message = '%.4fs' % time.real
+    time_message = format('%.4fs', time.real)
     say(time_message, :subitem)
     time_message
   end

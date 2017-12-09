@@ -1,5 +1,5 @@
 
-module BaseHelper
+module Base::Project::App::Helpers::BaseHelper
   def bootstrap_class_for(flash_type)
     case flash_type.to_sym
     when :success

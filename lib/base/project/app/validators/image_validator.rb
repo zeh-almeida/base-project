@@ -1,6 +1,6 @@
 
 
-class ImageValidator < ActiveModel::EachValidator
+class Base::Project::App::Validators::ImageValidator < ActiveModel::EachValidator
   def validate_each(record, attribute, value)
     return if value.queued_for_write.blank? || value.queued_for_write[:original].blank?
 

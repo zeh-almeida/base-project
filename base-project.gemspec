@@ -34,4 +34,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'simple_form'
   spec.add_development_dependency 'i18n_generators'
   spec.add_development_dependency 'paperclip'
+  spec.add_development_dependency 'countries'
 end

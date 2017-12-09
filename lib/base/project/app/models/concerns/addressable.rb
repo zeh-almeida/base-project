@@ -1,4 +1,4 @@
-module Addressable
+module Base::Project::App::Models::Concerns::Addressable
   extend ActiveSupport::Concern
 
   included do
@@ -29,7 +29,7 @@ module Addressable
     scope :by_street,     ->(street)   { where("#{table_name}.street   ILIKE ?", "%#{street}%") }
     scope :by_number,     ->(number)   { where("#{table_name}.number = ?", number.to_i.to_s) }
     scope :by_district,   ->(district) { where("#{table_name}.district ILIKE ?", "%#{district}%") }
-    scope :by_zipcode,    ->(zipcode)  { where("#{table_name}.zipcode  ILIKE ?", "%#{StringSanitizer.remove_punctuation(zipcode)}%") }
+    scope :by_zipcode,    ->(zipcode)  { where("#{table_name}.zipcode  ILIKE ?", "%#{Base::Project::Lib::StringSanitizer.remove_punctuation(zipcode)}%") }
 
     scope :regular_order, -> { order("#{table_name}.default DESC, #{table_name}.name") }
     scope :the_defaults, -> { where("#{table_name}.default = ?", true) }

@@ -1,5 +1,5 @@
 
-module ImageConcern
+module Base::Project::App::Models::Concerns::ImageConcern
   extend ActiveSupport::Concern
 
   included do

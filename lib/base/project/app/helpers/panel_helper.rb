@@ -1,5 +1,5 @@
 
-module PanelHelper
+module Base::Project::App::Helpers::PanelHelper
   def do_panel(params, &block)
     params[:block] = block
     params[:color] ||= 'panel-primary'

@@ -1,4 +1,4 @@
-module StringSanitizer
+module Base::Project::Lib::StringSanitizer
   extend self
 
   def remove_punctuation(str)

@@ -1,5 +1,5 @@
 
-module ScopeConcern
+module Base::Project::App::Models::Concerns::ScopeConcern
   extend ActiveSupport::Concern
 
   included do

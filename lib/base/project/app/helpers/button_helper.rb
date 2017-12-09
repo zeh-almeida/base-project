@@ -1,5 +1,5 @@
 
-module ButtonHelper
+module Base::Project::App::Helpers::ButtonHelper
   def command_button( path, row_id, message, additional = { } )
     options = { remote: false, role: :get, target: '_self', klass: '',
                 text: "", confirm: false, data: { } }.merge( additional )

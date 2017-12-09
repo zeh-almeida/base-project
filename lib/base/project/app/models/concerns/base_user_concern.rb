@@ -1,5 +1,5 @@
 
-module BaseUserConcern
+module Base::Project::App::Models::Concerns::BaseUserConcern
   extend ActiveSupport::Concern
 
   included do
@@ -18,7 +18,7 @@ module BaseUserConcern
     validates :email, presence: true, uniqueness: true, format: { with: Devise.email_regexp }
     validates :updated_password, inclusion: { in: [true, false] }
 
-    scope :by_cpf,   ->(cpf)   { where("#{table_name}.cpf            ILIKE ?", "%#{StringSanitizer.remove_punctuation(cpf)}%") }
+    scope :by_cpf,   ->(cpf)   { where("#{table_name}.cpf            ILIKE ?", "%#{Base::Project::Lib::StringSanitizer.remove_punctuation(cpf)}%") }
     scope :by_email, ->(email) { where("#{table_name}.email          ILIKE ?", "%#{email}%") }
     scope :by_name,  ->(name)  { where("unaccent(#{table_name}.name) ILIKE ?", "%#{name}%") }
 

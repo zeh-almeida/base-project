@@ -1,5 +1,5 @@
 
-module BaseCrudController
+module Base::Project::App::Controllers::Concerns::BaseCrudController
   extend ActiveSupport::Concern
 
   @serializer_class ||= nil

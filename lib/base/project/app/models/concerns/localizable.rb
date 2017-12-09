@@ -1,4 +1,4 @@
-module Localizable
+module Base::Project::App::Models::Concerns::Localizable
   extend ActiveSupport::Concern
 
   included do

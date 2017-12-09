@@ -1,5 +1,5 @@
 
-module LocalizableHelper
+module Base::Project::App::Helpers::LocalizableHelper
   def prepare_coordinates(location)
     coordinate_array = location.coordinates
     coordinate_array.present? ? escape_javascript(coordinate_array.to_json).to_s : ''
