@@ -1,8 +1,8 @@
 # Base::Project
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/base/project`. To experiment with that code, run `bin/console` for an interactive prompt.
+This project contains some base code for a Ruby on Rails project. There are base definitions for Addresses as well as ways to select them; There are definitions for a base CRUD controller;
 
-TODO: Delete this and the text above, and describe your gem
+And many more.
 
 ## Installation
 
@@ -14,15 +14,19 @@ gem 'base-project'
 
 And then execute:
 
-    $ bundle
+```
+$ bundle
+```
 
 Or install it yourself as:
 
-    $ gem install base-project
+```
+$ gem install base-project
+```
 
 ## Usage
 
-TODO: Write usage instructions here
+We'll get to that later, sorry.
 
 ## Development
 
@@ -32,8 +36,8 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/base-project. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at <https://github.com/[USERNAME]/base-project>. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## Code of Conduct
 
-Everyone interacting in the Base::Project project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/base-project/blob/master/CODE_OF_CONDUCT.md).
+Everyone interacting in the Base::Project project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/base-project/blob/master/CODE_OF_CONDUCT.md).
